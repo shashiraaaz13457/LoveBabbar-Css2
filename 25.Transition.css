@@ -1,0 +1,33 @@
+.container{
+    border: 1px solid red;
+    width: 500px;
+    height: 500px;
+    background-color: green;
+    display: flex;
+}
+
+.box{
+    border: 1px solid orange;
+    width: 150px;
+    margin: 20px;
+    height: 150px;
+    background-color: aqua;
+
+    /* transition: 1s; */
+
+    /* Bad Practice */
+    /* transition-property: all; */
+
+    /* transition-delay: 2s; */
+
+    /* transition: transform 10s ease ; */
+    /* transition: all 10s ease 1s ; */
+    transition: transform 1s cubic-bezier(1, -0.62, 0, 1.42); 
+    /* Go to inspect and use bezier curve 50min */
+}
+.box:hover{
+    /* background-color: brown; */
+    transform: rotateY(90deg); 
+
+    /* transform: translateX(450px); */
+}
